@@ -20,6 +20,20 @@ git clone https://github.com/sbwml/luci-app-alist package/alist
 rm -rf feeds/packages/lang/golang
 svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/packages/lang/golang
 
+#Add myautocore
+rm -rf package/lean/autocore
+git clone https://github.com/sirpdboy/myautocore package/myautocore
+
+#Add lucky
+git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
+
+#Add autosamba
+rm -rf package/lean/autosamba
+git clone https://github.com/sirpdboy/autosamba package/autosamba
+
+#Add netdata
+git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
+
 # Clone community packages
 mkdir package/community
 pushd package/community
