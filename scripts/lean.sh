@@ -157,4 +157,4 @@ CONFIG_VHOST_NET=y
 EOF
 
 # Test kernel 5.15
-sed -i 's/6.1/5.4/g' ./target/linux/rockchip/Makefile
+#sed -i 's/6.1/5.4/g' ./target/linux/rockchip/Makefile
