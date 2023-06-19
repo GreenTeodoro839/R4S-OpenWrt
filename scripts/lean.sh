@@ -28,6 +28,7 @@ rm -rf package/lean/autosamba
 git clone https://github.com/sirpdboy/autosamba package/autosamba
 
 #Add netdata
+rm -rf package/feeds/admin/netdata
 git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 
 # Clone community packages
