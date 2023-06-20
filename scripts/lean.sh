@@ -24,8 +24,8 @@ svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/pac
 git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
 
 #Add myautocore
-rm -rf package/lean/autocore
-git clone https://github.com/sirpdboy/myautocore package/myautocore
+#rm -rf package/lean/autocore
+#git clone https://github.com/sirpdboy/myautocore package/myautocore
 
 #Add autosamba
 rm -rf package/lean/autosamba
@@ -34,6 +34,7 @@ git clone https://github.com/sirpdboy/autosamba package/autosamba
 #Add netdata
 rm -rf package/feeds/admin/netdata
 rm -rf package/*/admin/netdata/
+rm -rf customfeeds/packages/admin/netdata/
 git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 
 # Clone community packages
