@@ -23,6 +23,12 @@ svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/pac
 #Add lucky
 git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
 
+#Add chatgpt
+git clone https://github.com/sirpdboy/chatgpt-web.git package/luci-app-chatgpt
+
+#Add parentcontrol
+git clone https://github.com/sirpdboy/luci-app-parentcontrol.git package/luci-app-parentcontrol
+
 #Add myautocore
 #rm -rf package/lean/autocore
 #git clone https://github.com/sirpdboy/myautocore package/myautocore
