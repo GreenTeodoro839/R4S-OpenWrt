@@ -154,6 +154,11 @@ chmod u+x target/linux/rockchip/armv8/base-files/etc/init.d/fa-rk3399-pwmfan
 chmod u+x target/linux/rockchip/armv8/base-files/usr/bin/start-rk3399-pwm-fan.sh
 
 # 开启ARM KVM支持
+rm -rf package/feeds/utils/qemu
+wget https://github.com/GreenTeodoro839/R4S-OpenWrt/raw/main/data/qemu.zip
+unzip qemu.zip
+mv qemu ./package/
+rm qemu.zip
 cat >> target/linux/rockchip/armv8/config-5.4 <<EOF
 CONFIG_VIRTUALIZATION=y
 CONFIG_KVM=y
