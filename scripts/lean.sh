@@ -44,6 +44,7 @@ git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 #remove theme
 rm -rf package/feeds/luci/luci-theme-btmod
 rm -rf package/feeds/luci/luci-theme-ifit
+sed -i 's/luci-theme-bootstrap/Argon/' feeds/luci/collections/luci/Makefile
 
 # Clone community packages
 mkdir package/community
