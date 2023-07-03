@@ -41,6 +41,10 @@ git clone https://github.com/sirpdboy/autosamba package/autosamba
 rm -rf package/feeds/luci/luci-app-netdata
 git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 
+#remove theme
+rm -rf package/feeds/luci/luci-theme-btmod
+rm -rf package/feeds/luci/luci-theme-ifit
+
 # Clone community packages
 mkdir package/community
 pushd package/community
@@ -91,8 +95,6 @@ git clone --depth=1 https://github.com/iwrt/luci-app-ikoolproxy.git
 rm -rf ../../customfeeds/luci/applications/luci-app-kodexplorer
 
 # Add luci-theme
-rm -rf package/feeds/luci/luci-theme-btmod
-rm -rf package/feeds/luci/luci-theme-ifit
 git clone https://github.com/DHDAXCW/theme
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
 
