@@ -17,6 +17,10 @@ cp ../modules-5.4/video.mk ./package/kernel/linux/modules/video.mk
 
 # alist
 git clone https://github.com/sbwml/luci-app-alist package/alist
+cd package/alist
+git reset --hard e21b777
+cd ..
+cd ..
 rm -rf feeds/packages/lang/golang
 svn export https://github.com/sbwml/packages_lang_golang/branches/19.x feeds/packages/lang/golang
 
